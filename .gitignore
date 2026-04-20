@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local vector store and generated outputs
+storage/chroma_db/
+results/
+
+# Local tooling artifacts
+.codex
