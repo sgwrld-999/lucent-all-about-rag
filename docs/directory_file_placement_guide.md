@@ -6,7 +6,7 @@ guesswork or accidental mixing of responsibilities.
 
 ## Core Principle
 
-Keep `rag/` organized by responsibility:
+Keep `lucent/` organized by responsibility:
 
 - backend code goes into responsibility-based Python packages
 - runtime artifacts stay outside backend code
