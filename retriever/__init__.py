@@ -1,5 +1,6 @@
 """Retriever and reranking helpers."""
 
+from .crag import CRAG, CRAGState, GradeDecision
 from .retrieval import (
     available_models,
     build_search_keyword_args,
@@ -12,8 +13,14 @@ from .retrieval import (
     rank_documents_by_keywords,
     search_vector_database,
 )
+from ..tools.tools import DuckDuckGoSearcher, VectorStoreRetriever
 
 __all__ = [
+    "CRAG",
+    "CRAGState",
+    "DuckDuckGoSearcher",
+    "GradeDecision",
+    "VectorStoreRetriever",
     "available_models",
     "build_search_keyword_args",
     "extract_filters",

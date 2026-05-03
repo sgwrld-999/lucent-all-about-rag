@@ -10,10 +10,10 @@ from urllib.request import urlopen
 from rank_bm25 import BM25Plus
 
 try:
-    from lucent.dataset.models import ChunkMetadata, RankingKeywords
+    from lucent.schemas.models import ChunkMetadata, RankingKeywords
     from lucent.utils.common import DEFAULT_BASE_URL, create_chat_llm
 except ModuleNotFoundError:
-    from dataset.models import ChunkMetadata, RankingKeywords
+    from schemas.models import ChunkMetadata, RankingKeywords
     from utils.common import DEFAULT_BASE_URL, create_chat_llm
 
 
@@ -384,5 +384,3 @@ def initialize_retrieval_runtime(
         "vector_store": vector_store,
         "base_url": base_url,
     }
-
-    return [docs[index] for index in ranked_indices[:k]]

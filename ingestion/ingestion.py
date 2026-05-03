@@ -44,10 +44,6 @@ def extract_metadata_from_filename(filename: str) -> dict[str, Any]:
     return metadata
 
 
-def extract_metedata_from_file_name(filename: str) -> dict[str, Any]:
-    """Backward-compatible alias for the older typoed helper name."""
-    return extract_metadata_from_filename(filename)
-
 
 def extract_pdf_page_wise(pdf_path: str) -> list[str]:
     """Convert a PDF into page-wise markdown chunks."""
