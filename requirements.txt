@@ -1,0 +1,21 @@
+# Core RAG runtime
+langchain-core
+langchain-chroma
+langchain-ollama
+langgraph
+
+# Data ingestion and retrieval
+docling
+rank-bm25
+
+# Configuration and schemas
+pydantic
+python-dotenv
+
+# Notebook workflows
+ipython
+jupyterlab
+
+# Optional agent/runtime helper used by nodes/page_rag/agent_node.py
+accelerate
+
